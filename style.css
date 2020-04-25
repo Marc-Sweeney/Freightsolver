@@ -83,6 +83,51 @@ font-family: ubuntu;
 }
 
 
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+.home-container {
+  display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    'nav nav nav nav nav nav' 
+    'left left left left left left'
+    'right right right right right right'
+    'countersleft countersleft countersleft countersleft countersleft countersleft' 
+    'countersright countersright countersright countersright countersright countersright'
+    'customersleft customersleft customersleft customersleft customersleft customersleft'
+    'customerscenter customerscenter customerscenter customerscenter customerscenter customerscenter'
+    'customersright customersright customersright customersright customersright customersright'  
+    'benefitsleft benefitsleft benefitsleft benefitsleft benefitsleft benefitsleft' 
+    'benefitscenter benefitscenter benefitscenter benefitscenter benefitscenter benefitscenter'
+    'benefitsright benefitsright benefitsright benefitsright benefitsright benefitsright'
+    'plans plans plans plans plans plans'  
+    'footerleft footerleft footerleft footerright footerright footerright';
+  
+} 
+
+    .testimonials{
+    align-content: center;
+    }
+    
+.testimonial{
+    width: 350px;}
+
+.left{
+    vertical-align: center;
+	min-height: 700px;
+}
+    
+    .right{
+        align-content: center;
+        min-height: 100vh;
+    }
+
+.plans{height: 1000px;} 
+
+}
+
 @media screen and (max-width: 650px) {
 .home-container {
   display: grid;
@@ -1207,7 +1252,9 @@ font-family: ubuntu;}
 @media only screen 
     and (device-width : 375px) 
     and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) {   .grid-container  {
+    and (-webkit-device-pixel-ratio : 3) {   
+	    
+.grid-container  {
     grid-template-areas: 
     'nav nav nav nav nav nav'
     'left left left left left left' 
@@ -1268,5 +1315,7 @@ font-family: ubuntu;}
     }
 
     
-    .plans{height: 1650px;}  }
+    .plans{height: 1650px;}  
+
+}
 </style>
