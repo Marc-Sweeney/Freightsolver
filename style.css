@@ -125,6 +125,11 @@ font-family: ubuntu;
     }
 
 .plans{height: 1000px;} 
+	  
+.login-form{
+    	border: none;
+  	
+	    }
 
 }
 
@@ -167,7 +172,7 @@ font-family: ubuntu;
     }
 
 .plans{height: 1000px;} 
-
+	
 }
 .signup-container {
   display: grid;
