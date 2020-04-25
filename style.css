@@ -1318,9 +1318,7 @@ font-family: ubuntu;}
     .plans{height: 1650px;}  
 	    
 .login-form{
-    max-width: 288px;
-    max-height: 384px;
-    padding: 64px 32px;
+    border: none;
   
 	    }}
 </style>
