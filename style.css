@@ -1203,4 +1203,70 @@ font-family: ubuntu;}
     
     .plans{height: 1650px;}    
 }
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {   .grid-container  {
+    grid-template-areas: 
+    'nav nav nav nav nav nav'
+    'left left left left left left' 
+    'right right right right right right' 
+    'counter counter counter counter counter counter'
+    'benefitsleft benefitsleft benefitsleft benefitsleft benefitsleft benefitsleft'
+    'benefitscenter benefitscenter benefitscenter benefitscenter benefitscenter benefitscenter' 
+    'benefitsright benefitsright benefitsright benefitsright benefitsright benefitsright'
+    'customersleft customersleft customersleft customersleft customersleft customersleft'
+    'customerscenter customerscenter customerscenter customerscenter customerscenter customerscenter'
+    'customersright customersright customersright customersright customersright customersright'
+    'plans plans plans plans plans plans' 
+    'footerleft footerleft footerleft footerright footerright footerright';
+    
+  }
+    
+   
+.show-menu-btn, .hide-menu-btn{
+        display: block;
+        color: black;
+        height: 70px;
+        padding-bottom: 40px;
+    }
+    
+    
+    
+    .nav{
+        border: none;
+    }
+    
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+    
+    .menu a{
+        
+        display: block;
+        padding: 20px;
+    }
+    
+    .hide-menu-btn{
+        position: absolute;
+        top: 40px;
+        right:40px;
+    }
+    
+    #chk:checked ~ .menu{
+        right: 0;
+    }
+
+    
+    .plans{height: 1650px;}  }
 </style>
