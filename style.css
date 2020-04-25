@@ -125,12 +125,37 @@ font-family: ubuntu;
     }
 
 .plans{height: 1000px;} 
-	  
-.login-form{
-    	border: none;
-  	
-	    }
+	 
 
+}
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {  
+
+.signup-container {
+  display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    'nav nav nav nav nav nav' 
+    'mainsu mainsu mainsu mainsu mainsu mainsu'
+    'footerleft footerleft footerleft footerright footerright footerright';
+} 
+
+        
+        .login-form{
+            width: 288px;
+            background: white;
+            height: 384px;
+            padding: 64px 32px; 
+        }
+
+        .containform{
+	   padding: 10px;
+	   }
+        
+        
 }
 
 @media screen and (max-width: 650px) {
